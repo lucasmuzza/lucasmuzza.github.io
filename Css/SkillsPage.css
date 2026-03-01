@@ -45,6 +45,8 @@ header {
     margin-bottom: 0.5rem;
 }
 
+.header-links a.active { color: #8C1C1C; }
+
 .header-title {
     font-family: 'Syne', sans-serif;
     font-size: clamp(3rem, 8vw, 7rem);

@@ -33,6 +33,7 @@ body::before {
     opacity: 0.6;
 }
 
+
 /* ── Header ── */
 .header-nav
 {
@@ -43,7 +44,7 @@ body::before {
     max-width: 1500px;
     padding: 3rem 4rem;
     height: 120px;
-
+    
     border-bottom: 2px solid #8C1C1C;
 }
 
@@ -77,6 +78,7 @@ body::before {
 .header-links a:hover{
     color: #8C1C1C;
 }
+.header-links a.active { color: #8C1C1C; }
 
 /* ── HERO ── */
     .hero {

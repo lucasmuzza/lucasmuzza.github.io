@@ -4,15 +4,108 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lucas Muzza - Sobre</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lily+Script+One&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lily+Script+One&family=Lobster&family=Oswald:wght@200..700&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Css/AboutPage.css" />
 </head>
 <body>
+
+    <header>
+        <nav class="header-nav">
+            <div class="header-name"><p><span>Lucas Muzza</span></p></div>
+            <div class="header-links">
+                <a href="./">Pagina Inicial</a>
+                <a href="./AboutPage" class="active">Sobre</a>
+                <a href="./CurriculumPage">Currículo</a>
+                <a href="./SkillsPage">Habilidades</a>
+                <a href="./ProjectsPage">Projetos</a>
+                <a href="./ContactPage">Contato</a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="page-header">
+        <div>
+            <p class="page-header-label">About</p>
+            <h1 class="page-header-title">
+                About
+                <span>Me.</span>
+            </h1>
+        </div>
+        <div class="page-header-right">
+            <p>Ciência da Computação</p>
+            <p>1° Período</p>
+            <p>Foco em Full-Stack</p>
+        </div>
+    </div>
+
+    <main>
+        <section class="intro">
+        <div class="photo-wrap">
+                <div class="photo-placeholder">
+                    <span class="photo-placeholder-icon">◈</span>
+                    <span>Sua foto aqui</span>
+                </div>
+            </div>
+            <div class="intro-text">
+                <span class="section-label">// quem sou eu</span>
+                <h2 class="intro-title">
+                    Olá, me chamo Lucas
+                </h2>
+                <p class="intro-body">
+                    Sou estudante de Ciência da Computação no primeiro período da minha graduação.
+                </p>
+                <!-- <p class="intro-body">
+                    Minha jornada começou pelo front-end — aprendendo HTML e CSS para entender como as páginas ganham forma e vida. Cada projeto é uma oportunidade de crescer e consolidar o que aprendo.
+                </p>
+                <p class="intro-body">
+                    Sou metódico, comprometido e acredito que a base sólida que estou construindo agora será o diferencial da minha carreira como desenvolvedor full stack no futuro.
+                </p> -->
+            </div>
+    </section>
+
+    <section class="education">
+        <span class="section-label">// formação acadêmica</span>
+
+        <div class="edu-card">
+            <div class="edu-period">
+                <strong>2026</strong>
+                Em andamento
+            </div>
+            <div class="edu-info">
+                <h3 class="edu-course">Bacharelado em Ciência da Computação</h3>
+                <p class="edu-institution">Unifeso</p>
+                <p class="edu-desc">
+                    Curso que abrange fundamentos de programação, estruturas de dados, algoritmos, sistemas operacionais, redes de computadores e desenvolvimento de software. Atualmente no primeiro período, com foco em consolidar os fundamentos da área.
+                </p>
+                <span class="edu-tag">1° Período</span>
+            </div>
+        </div>
+
+        <div class="edu-card">
+        <div class="edu-period">
+            <strong>2022-2025</strong>
+            Concluído
+        </div>
+        <div class="edu-info">
+            <h3 class="edu-course">Tecnólogo em Jogos Digitais</h3>
+            <p class="edu-institution">Instituto Federal do Mato Grosso do Sul</p>
+            <p class="edu-desc">
+                Curso que abrange todas as áreas de desenvolvimento de um jogo, incluindo: programação, arte 2D e 3D, game design e audio.
+        </div>
+    </div>
+
+    </section>
+    </main>
 
     <footer>
     <span>© 2025 — Lucas Muzza Pires Ferreira</span>
     <div class="footer-quicklinks">
         <div class="footer-quicklinks-container">
             <a href="./">Pagina Inicial</a>
-            <a href="./AboutPage">Sobre</a>
+            <a href="./AboutPage" class="active">Sobre</a>
             <a href="./CurriculumPage">Currículo</a>
             <a href="./SkillsPage">Habilidades</a>
             <a href="./ProjectsPage">Projetos</a>
