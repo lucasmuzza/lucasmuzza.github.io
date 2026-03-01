@@ -33,7 +33,7 @@ body::before {
     opacity: 0.6;
 }
 
-
+/* ── Header ── */
 .header-nav
 {
     display: flex;
@@ -202,10 +202,173 @@ body::before {
     text-shadow: 0 0 40px rgba(242, 62, 46, 0.4);
 }
 
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to   { transform: rotate(360deg); }
+}
+
 @keyframes fadeUp {
     from { opacity: 0; transform: translateY(30px); }
     to   { opacity: 1; transform: translateY(0); }
 }
+
+/* ── ABOUT SNAPSHOT ── */
+.about-snap {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 6rem 4rem;
+    display: flex;
+    gap: 6rem;
+    align-items: flex-start;
+    border-bottom: 1px solid var(--border);
+    animation: fadeUp 0.8s ease 0.2s both;
+}
+
+.section-label {
+    font-family: "Oswald", sans-serif;
+    font-size: 0.8rem;
+    letter-spacing: 0.2em;
+    color: var(--accent);
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+    display: block;
+}
+
+.about-snap-text { flex: 1; }
+
+.about-snap-title {
+    font-family: "Oswald", sans-serif;
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 700;
+    line-height: 1.15;
+    margin-bottom: 1.5rem;
+    letter-spacing: -0.01em;
+}
+
+.about-snap-title em {
+    font-style: italic;
+    color: var(--accent);
+    font-family: "Source Serif 4", serif;
+    font-weight: 300;
+}
+
+.about-snap-body {
+    font-size: 1rem;
+    color: var(--muted);
+    line-height: 1.8;
+    font-weight: 300;
+    max-width: 480px;
+    margin-bottom: 2rem;
+    letter-spacing: 0.03em;
+}
+
+.about-snap-stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1px;
+    background: var(--border);
+    border: 1px solid var(--border);
+    align-self: center;
+    flex-shrink: 0;
+}
+
+.stat-card {
+    background: var(--card);
+    padding: 2rem 2.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    transition: background 0.2s;
+}
+
+.stat-card:hover { background: #111416; }
+
+.stat-num {
+    font-family: "Oswald", sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--accent);
+    line-height: 1;
+}
+
+.stat-label {
+    font-size: 0.7rem;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+}
+
+/* ── SKILLS PREVIEW ── */
+.skills-preview {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 6rem 4rem;
+    border-bottom: 1px solid var(--border);
+    animation: fadeUp 0.8s ease 0.3s both;
+}
+
+.skills-grid {
+    display: flex;
+    gap: 1px;
+    background: var(--border);
+    border: 1px solid var(--border);
+    margin-bottom: 2rem;
+}
+
+.skill-chip {
+    flex: 1;
+    background: var(--card);
+    padding: 2.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+    transition: background 0.2s, transform 0.2s;
+    cursor: default;
+    position: relative;
+    overflow: hidden;
+}
+
+.skill-chip::after {
+    content: '';
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    height: 2px;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+}
+
+.skill-chip--active::after   { background: var(--accent); }
+.skill-chip--learning::after { background: var(--accent2); }
+.skill-chip--soon::after     { background: var(--muted); }
+
+.skill-chip:hover { background: #111416; transform: translateY(-3px); }
+.skill-chip:hover::after { transform: scaleX(1); }
+
+.skill-chip img { width: 48px; height: 48px; object-fit: contain; }
+
+.chip-icon { font-size: 2.5rem; color: var(--muted); line-height: 1; }
+
+.skill-chip > span {
+    font-family: "Oswald", sans-serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+}
+
+.skill-chip small {
+    font-size: 0.65rem;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+}
+
+.skill-chip--active small   { color: var(--accent); }
+.skill-chip--learning small { color: var(--accent2); }
+
+.skills-link { display: block; width: fit-content; }
+
 
 footer {
     padding: 2rem 6rem;
