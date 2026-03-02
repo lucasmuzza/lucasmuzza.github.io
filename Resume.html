@@ -4,8 +4,194 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lucas Muzza - Currículo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lily+Script+One&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lily+Script+One&family=Lobster&family=Oswald:wght@200..700&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Css/ResumePage.css" />
 </head>
 <body>
+
+    <header>
+        <nav class="header-nav">
+            <div class="header-name" translate="no"><p><span>Lucas Muzza</span></p></div>
+            <div class="header-links">
+                <a href="./">Pagina Inicial</a>
+                <a href="./About">Sobre</a>
+                <a href="./Resume" class="active">Currículo</a>
+                <a href="./Skills">Habilidades</a>
+                <a href="./Projects">Projetos</a>
+                <a href="./Contact">Contatos</a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="page-header">
+        <div>
+            <p class="page-header-label">Resume</p>
+            <h1 class="page-header-title">
+                Currículo
+                <span>Vitae.</span>
+            </h1>
+        </div>
+        <div class="page-header-right">
+            <a href="Others/curriculo-LucasMuzza.pdf" download class="btn-download">⬇ Baixar PDF</a>
+        </div>
+    </div>
+
+<main>
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+        <div class="sidebar-block">
+            <span class="section-label">// contato</span>
+            <div class="sidebar-contact-item">
+                <span class="sidebar-contact-label">E-mail</span>
+                <a href="mailto:muzzalucas@gmail.com" class="sidebar-contact-value">muzzalucas@gmail.com</a>
+            </div>
+            <div class="sidebar-contact-item">
+                <span class="sidebar-contact-label">Telefone</span>
+                <span class="sidebar-contact-value">(21) 98213-3401</span>
+            </div>
+            <div class="sidebar-contact-item">
+                <span class="sidebar-contact-label">LinkedIn</span>
+                <a href="https://linkedin.com/in/lucasmuzza" target="_blank" class="sidebar-contact-value">linkedin.com/in/lucasmuzza</a>
+            </div>
+        </div>
+
+        <div class="sidebar-block">
+            <span class="section-label">// idiomas</span>
+            <div class="lang-list">
+                <div class="lang-item">
+                    <span>Português</span>
+                    <span class="lang-level">Nativo</span>
+                </div>
+                <div class="lang-item">
+                    <span>Inglês</span>
+                    <span class="lang-level">Fluente</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="sidebar-block">
+            <span class="section-label">// habilidades</span>
+            <div class="skills-list">
+                <div class="skill-item">HTML5 & CSS3</div>
+                <div class="skill-item">JavaScript</div>
+                <div class="skill-item">C# & Lógica de Programação</div>
+                <div class="skill-item">Arquitetura de Software</div>
+                <div class="skill-item">Trabalho em Equipe</div>
+                <div class="skill-item">Documentação Técnica</div>
+            </div>
+        </div>
+
+    </aside>
+
+    <!-- CONTENT -->
+    <div class="content">
+
+        <!-- PERFIL -->
+        <div class="content-section">
+            <span class="section-label">// perfil</span>
+            <p class="profile-text">
+                Desenvolvedor com background em game development, atualmente em transição para o desenvolvimento web. Tenho experiência profissional com programação, desenvolvimento de interfaces e trabalho em equipe em projetos reais. Estou cursando Ciência da Computação com o objetivo de me tornar um desenvolvedor full stack.
+            </p>
+        </div>
+
+        <!-- EXPERIÊNCIA -->
+        <div class="content-section">
+            <span class="section-label">// experiência profissional</span>
+            <div class="timeline">
+
+                <div class="timeline-item">
+                    <div class="timeline-period">
+                        <strong>2025</strong>
+                        Mar — Out
+                    </div>
+                    <div class="timeline-body">
+                        <h3 class="timeline-title">Programador de Gameplay</h3>
+                        <p class="timeline-company">Coletivo Bolo Guará</p>
+                        <p class="timeline-desc">
+                            Atuei como programador de gameplay em um estúdio independente, desenvolvendo sistemas centrais do jogo em equipe multidisciplinar. Fui responsável pela criação de interfaces de usuário interativas, sistemas de diálogo e integração entre módulos, colaborando diretamente com times de arte e design.
+                        </p>
+                        <div class="timeline-tags">
+                            <span class="tag highlight">C#</span>
+                            <span class="tag highlight">UI</span>
+                            <span class="tag">Game Development</span>
+                            <span class="tag">Trabalho em Equipe</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-period">
+                        <strong>2023–2024</strong>
+                        Estágio
+                    </div>
+                    <div class="timeline-body">
+                        <h3 class="timeline-title">Estagiário de Desenvolvimento de Jogos</h3>
+                        <p class="timeline-company">CRC — IFMS</p>
+                        <p class="timeline-desc">
+                            Desenvolvimento de jogos educacionais distribuídos a escolas municipais do Mato Grosso do Sul. Responsável pela programação dos sistemas e mecânicas, documentação técnica e apresentação dos projetos ao público final.
+                        </p>
+                        <div class="timeline-tags">
+                            <span class="tag highlight">C#</span>
+                            <span class="tag">Game Development</span>
+                            <span class="tag">Documentação Técnica</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- FORMAÇÃO -->
+        <div class="content-section">
+            <span class="section-label">// formação acadêmica</span>
+            <div class="timeline">
+
+                <div class="timeline-item">
+                    <div class="timeline-period">
+                        <strong>2026–2030</strong>
+                        Em andamento
+                    </div>
+                    <div class="timeline-body">
+                        <h3 class="timeline-title">Bacharelado em Ciência da Computação</h3>
+                        <p class="timeline-company">Unifeso</p>
+                        <p class="timeline-desc">
+                            Curso com foco em fundamentos de programação, estruturas de dados, algoritmos, redes e desenvolvimento de software. Base teórica e prática para atuação como desenvolvedor full stack.
+                        </p>
+                        <div class="timeline-tags">
+                            <span class="tag highlight">Em curso</span>
+                            <span class="tag">1° Período</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-period">
+                        <strong>2022–2025</strong>
+                        Concluído
+                    </div>
+                    <div class="timeline-body">
+                        <h3 class="timeline-title">Tecnólogo em Jogos Digitais</h3>
+                        <p class="timeline-company">IFMS — Câmpus Dourados</p>
+                        <p class="timeline-desc">
+                            Formação técnica com forte ênfase em programação, arquitetura de software, desenvolvimento colaborativo e resolução de problemas complexos — habilidades diretamente aplicáveis ao desenvolvimento web.
+                        </p>
+                        <div class="timeline-tags">
+                            <span class="tag highlight">Concluído</span>
+                            <span class="tag">Programação</span>
+                            <span class="tag">Arquitetura de Software</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</main>
     
     <footer>
     <span>© 2025 — Lucas Muzza Pires Ferreira</span>
