@@ -1,7 +1,6 @@
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
-
 :root {
     --bg: #070A0D;
     --surface: #0f1114;
@@ -31,14 +30,50 @@ body::before {
     opacity: 0.6;
 }
 
-header {
-    padding: 4rem 6rem 2rem;
+.header-nav
+{
     display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    border-bottom: 1px solid var(--border);
-    animation: fadeDown 0.8s ease both;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0 auto;
+    max-width: 1500px;
+    padding: 3rem 4rem;
+    height: 120px;
+    
+    border-bottom: 2px solid #8C1C1C;
 }
+
+.header-name 
+{
+    font-family: "Lobster", sans-serif;
+    font-size: 3rem;
+    align-self: center;
+    color: #BF2A2A;
+}
+
+.header-name span{
+    color: var(--text);
+}
+
+.header-links
+{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.header-links a{
+    text-decoration: none;
+    color: #BF2A2A;
+    cursor: pointer;
+    font-size: 2rem;
+    transition: color 0.2s;
+}
+
+.header-links a:hover{
+    color: #8C1C1C;
+}
+.header-links a.active { color: #8C1C1C; }
 
 .header-label {
     font-size: 0.7rem;
@@ -63,25 +98,42 @@ header {
     display: block;
 }
 
-.marquee-wrap {
-    overflow: hidden;
-    border-bottom: 1px solid var(--border);
-    padding: 0.9rem 0;
-    background: var(--surface);
+.page-header {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 4rem 6rem 2rem;
+    /* border-bottom: 1px solid var(--border); */
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    animation: fadeDown 0.8s ease both;
 }
 
-.marquee-track {
-    display: flex;
-    gap: 3rem;
-    white-space: nowrap;
-    animation: marquee 20s linear infinite;
+.page-header-label {
     font-size: 0.7rem;
-    letter-spacing: 0.15em;
+    letter-spacing: 0.25em;
     color: var(--muted);
     text-transform: uppercase;
+    margin-bottom: 0.75rem;
 }
 
-.marquee-track span { color: var(--accent); }
+.page-header-title {
+    font-family: "Oswald", sans-serif;
+    font-size: clamp(3rem, 8vw, 7rem);
+    font-weight: 700;
+    line-height: 0.9;
+    letter-spacing: -0.02em;
+}
+
+.page-header-title span {
+    color: var(--accent);
+    display: block;
+}
+
+.page-header-right {
+    display: flex;
+    align-items: flex-end;
+}
 
 main {
     padding: 4rem 6rem;
